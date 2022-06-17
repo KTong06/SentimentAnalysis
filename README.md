@@ -6,24 +6,8 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 <a><img alt='love' src="http://ForTheBadge.com/images/badges/built-with-love.svg"></a>
 
-# Sentiment Analysis - Good or Bad Review?
-Tens of thousands of movie reviews can be scrapped off the Internet in seconds, here is how you can categorise your fresh-off-the-Internet reviews quickly without breaking a sweat! This model is trained with over 50,000 IMDB reviews to categorise positive/negative reviews using LSTM technique.
+# Good or Bad Review? -A Sentiment Analysis-
+Tens of thousands of movie reviews can be scrapped off the Internet in seconds, here is how you can categorise your fresh-off-the-Internet reviews quickly without breaking a sweat! This model is trained with over 50,000 IMDB reviews to categorise positive/negative reviews using LSTM technique, dataset can be obtained [here](https://github.com/Ankit152/IMDB-sentiment-analysis).
 
-### Step by step guide
-
-**Hello World bolded**
-
-## To insert code in Readme
-
-`import numpy as np`
-
-`print('hello world')`
-
-This is fun! 😹
-
-## To insert URL
-
-[URL](https://www.markdownguide.org/cheat-sheet/)
-
-## To include images
+## Model Architecture
 ![model_architecture](Static/model.png)
