@@ -6,8 +6,9 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 <a><img alt='love' src="http://ForTheBadge.com/images/badges/built-with-love.svg"></a>
 
-# SentimentAnalysis
- Trained over 60,000 IMDB dataset to categorise positive/negative reviews
+# Sentiment Analysis - Good or Bad Review?
+Tens of thousands of movie reviews can be scrapped off the Internet in seconds, here is how you can categorise your fresh-off-the-Internet reviews quickly without breaking a sweat! This model is trained with over 50,000 IMDB reviews to categorise positive/negative reviews using LSTM technique.
+
 ### Step by step guide
 
 **Hello World bolded**
