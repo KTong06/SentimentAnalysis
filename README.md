@@ -7,14 +7,37 @@
 <a><img alt='love' src="http://ForTheBadge.com/images/badges/built-with-love.svg"></a>
 
 # Good or Bad Review? -A Sentiment Analysis-
-Tens of thousands of movie reviews can be scrapped off the Internet in seconds, here is how you can categorise your fresh-off-the-Internet reviews quickly without breaking a sweat! This model is trained with over 50,000 IMDB reviews to categorise positive/negative reviews using LSTM technique. Credits to [Ankit152](https://github.com/Ankit152) for the dataset which can be obtained [here](https://github.com/Ankit152/IMDB-sentiment-analysis).
+Tens of thousands of movie reviews can be scrapped off the Internet in seconds, here is how you can categorise your fresh-off-the-Internet reviews quickly without breaking a sweat. This model is trained with 50,000 IMDB reviews to categorise positive/negative reviews using LSTM technique. Credits to [Ankit152](https://github.com/Ankit152) for the dataset which can be obtained [here](https://github.com/Ankit152/IMDB-sentiment-analysis).
 
 ## Model Accuracy
-The model utilises MSE for loss function and accuracy for metrics, and achieved 85% accuracy. Performance of model is summarised below:
+The model achieved **85%** accuracy, utilizing **Adam** optimiser, **MSE** for loss function and **accuracy** for metrics. Performance of model is summarised below:
+
+![model_cm](Static/classification_report.jpg)
 
 | Performance Plot | Confusion Matrix |
 | ----------- | ----------- |
 | ![model_val_plot](Static/loss_acc_plot.png) | ![model_cm](Static/confusion_matrix.png) |
+
+## Dataset Overview
+Dataset has shape `(50000, 2)`, containing 50K reviews with labelled sentiment value `['positive' 'negative']`.
+
+## Data Inspection/ Cleaning
+Dataset contains `418` duplicated reviews hence removed. 
+**HTML** tags, **numbers** are filtered from dataset using **RegEx** module and subsequently lower-cased and splitted using `.lower()` and `.split()`. 
+
+## Preprocessing
+### Tokenizer
+**`Tokenizer()`** is used with hyperparameter **`num_words=10000`**.
+
+### Padding
+Length of each reviews are calculated and summarised with `length_of_review=[len(i) for i in train_sequences]` and **median value** obtained is `180`.
+Parameters of padding is summarised below:
+
+`padded_review=pad_sequences(train_sequences,maxlen=180,truncating='post',padding='post')`
+
+
+
+
 
 ## Model Architecture
 ![model_architecture](Static/model.png)
