@@ -11,12 +11,12 @@ Tens of thousands of movie reviews can be scrapped off the Internet in seconds, 
 
 ## Model Accuracy
 The model utilises MSE for loss function and accuracy for metrics, and achieved 85% accuracy. Performance of model is summarised below:
-![model_val_plot](Static/loss_acc_plot.png)
-![model_cm](Static/confusion_matrix.png)
-
-## Model Architecture
-![model_architecture](Static/model.png)
 
 | Performance Plot | Confusion Matrix |
 | ----------- | ----------- |
 | ![model_val_plot](Static/loss_acc_plot.png) | ![model_cm](Static/confusion_matrix.png) |
+
+## Model Architecture
+![model_architecture](Static/model.png)
+
+
