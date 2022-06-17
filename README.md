@@ -47,5 +47,14 @@ Parameters of padding is summarised below:
 ![model_architecture](Static/model.png)
 
 ## Discussion
+Model is able to achieve 98% and 85% during training and testing respectively, however model started to overfit at the 2nd epoch. 
+Adjustments to be made to avoid model overfit:
+- [ ] Increase dropout rate.
+- [ ] Implement early stopping.
 
+Improvements to consider to enhance accuracy:
+
+- [ ] Apply stemming/ lemmatization in preprocessing step.
+- [ ] Apply TF-IFD/ CNN technique in model development.
+- [ ] Refer/ utilize other pretrained model.
 
