@@ -35,11 +35,17 @@ Parameters of padding is summarised below:
 
 `padded_review=pad_sequences(train_sequences,maxlen=180,truncating='post',padding='post')`
 
+### Encoding Target Feature
+**One Hot Encoder** is used on target feature to expand columns for unique labelling.
 
-
-
+### Train test split
+**Train** and **test** dataset is splitted at 7:3 ratio.
 
 ## Model Architecture
+**`Sequential()`** approach is applied in model building. Model contains **Embedding**, **Bidirectional(LSTM)**, and **LSTM** layers:
+
 ![model_architecture](Static/model.png)
+
+## Discussion
 
 
