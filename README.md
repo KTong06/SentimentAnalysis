@@ -17,6 +17,6 @@ The model utilises MSE for loss function and accuracy for metrics, and achieved 
 ## Model Architecture
 ![model_architecture](Static/model.png)
 
-| Performance | Confusion Matrix |
+| Performance Plot | Confusion Matrix |
 | ----------- | ----------- |
-| Paragraph | Text |
+| ![model_val_plot](Static/loss_acc_plot.png) | ![model_cm](Static/confusion_matrix.png) |
