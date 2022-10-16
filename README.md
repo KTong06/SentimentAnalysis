@@ -9,6 +9,15 @@
 # Good or Bad Review? -A Sentiment Analysis-
 Tens of thousands of movie reviews can be scrapped off the Internet in seconds, here is how you can categorise your fresh-off-the-Internet reviews quickly without breaking a sweat. This model is trained with 50,000 IMDB reviews to categorise positive/negative reviews using LSTM technique. Credits to [Ankit152](https://github.com/Ankit152) for the dataset which can be obtained [here](https://github.com/Ankit152/IMDB-sentiment-analysis).
 
+## [UPDATE] ROC curve
+ROC curve plot is added for better assessment of model performance:
+
+![roc_curve](Static/roc_curve.png)
+
+Overview of model performance expressed under Area Under Curve (UAC) of ROC:
+
+![auc](Static/auc.png)
+
 ## Model Accuracy
 The model achieved **85%** accuracy, utilizing **Adam** optimiser, **MSE** for loss function and **accuracy** for metrics. Performance of model is summarised below:
 
@@ -19,7 +28,9 @@ The model achieved **85%** accuracy, utilizing **Adam** optimiser, **MSE** for l
 | ![model_val_plot](Static/loss_acc_plot.png) | ![model_cm](Static/confusion_matrix.png) |
 
 ## Dataset Overview
-Dataset has shape `(50000, 2)`, containing 50K reviews with labelled sentiment value `['positive' 'negative']`.
+Dataset has shape `(50000, 2)`, containing 50K reviews with labelled sentiment value `['positive' 'negative']`. Dataset is fairly balanced:
+
+![data_dist](Static/data_dist.png)
 
 ## Data Inspection/ Cleaning
 Dataset contains `418` duplicated reviews hence removed. 
